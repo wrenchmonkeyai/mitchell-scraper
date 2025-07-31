@@ -1,16 +1,16 @@
 {
   "name": "mitchell-scraper",
   "version": "1.0.0",
-  "description": "Puppeteer microservice for scraping Mitchell ProDemand",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "puppeteer install"
   },
-  "engines": {
-  "node": "20.x"
-},
   "dependencies": {
     "express": "^4.18.2",
     "puppeteer": "^21.3.8"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
